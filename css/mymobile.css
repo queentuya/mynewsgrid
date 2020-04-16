@@ -1,0 +1,128 @@
+/* FOR TABLETS */
+
+
+/* navbar
+want no social media symbols */
+#main-nav .social {
+    display: none;
+}
+/* want newsgrid icon and home/
+about to be in one column */
+#main-nav .container {
+    grid-template-columns: 1fr;
+    grid-gap: 1.2rem;
+}
+/* want home & about links centered */
+#main-nav ul {
+    justify-self: center;
+}
+/* want logo centered */
+#main-nav .logo {
+    justify-self: center;
+}
+/* move the links closer together */
+#main-nav ul li a {
+    padding: 0.5rem;
+}
+/* TO put into two columns */
+#home-articles .articles-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+/* to flip first and last back into
+columns */
+#home-articles .articles-container >
+*:first-child,
+#home-articles .articles-container >
+*:last-child {
+    grid-template-columns: 1fr;
+    grid-column: 1;
+}
+
+/* for phones <600px */
+@media(max-width: 600px) {
+    /* to make one single column */
+#showcase .showcase-container,
+#home-articles .articles-container,
+#main-footer .footer-container {
+    grid-template-columns: 1fr;
+}
+/* have to get rid of span to make
+into a single column */
+#main-footer .footer-container >
+*:last-child {
+    grid-column: 1;
+}
+
+/* to separate footer better */
+#main-footer .footer-container > * {
+    border-bottom: #444 dotted 1px;
+    padding-bottom: 1rem;
+}
+/* to remove some lines to make it 
+look better */
+
+#main-footer .footer-container >
+*:last-child,
+#main-footer .footer-container >
+*:nth-child(3),
+#main-footer .footer-container >
+*:nth-child(3), {
+    border: none;
+}
+
+/* to make about page into one column */
+.page-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+/* on article page reset grid-row
+span to one */
+.page-container > *:first-child {
+    grid-row: 1;
+}
+/* make large font size smaller */
+.l-heading {
+    font-size: 2rem;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
